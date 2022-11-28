@@ -1,0 +1,664 @@
+section {
+  .three200-area {
+    padding: 52px 0 0 0;
+    .three200-section {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+
+      .three200-bot-title {
+        width: 100%;
+        display: flex;
+        align-items: baseline;
+        padding: 60px 0 10px 0;
+        position: relative;
+        background: url(./assets/images/text_present2.png) no-repeat bottom left
+          20%/115px auto;
+        h2 {
+          font-size: 33.6px;
+          color: $orangeText;
+        }
+        span {
+          font-size: 24px;
+          font-weight: bold;
+          letter-spacing: 2.4px;
+        }
+      }
+      .three200-bot-title::after {
+        content: "";
+        position: absolute;
+        top: 48%;
+        bottom: 0;
+        right: 10px;
+        display: block;
+        width: 69%;
+        height: 2px;
+        margin: auto;
+        background: linear-gradient(90deg, $orangeText, #ffe59e);
+      }
+      .three200-title-p {
+        padding: 30px 0 0;
+        p {
+          font-size: 13px;
+        }
+      }
+    }
+    form {
+      width: 100%;
+      .top-selection-area {
+        padding: 90px 45px 55px 45px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1000px;
+        margin: 0 auto;
+        .selection-field {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+          width: 100%;
+          .selection-check-cont {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 400px;
+            width: 100%;
+            padding: 0 0 40px 0;
+            input[type="checkbox"] {
+              height: 21px;
+              width: 21px;
+              margin-right: 5px;
+              border-radius: 20px !important;
+            }
+            label {
+              font-size: 16px;
+              font-weight: bold;
+            }
+            img {
+              width: 29px;
+              height: 30px;
+            }
+          }
+          .selection-btn {
+            position: relative;
+            max-width: 411px;
+            width: 100%;
+            margin: 0;
+            a {
+              position: relative;
+              display: block;
+              margin: 0 1%;
+              padding: 20px 20px 20px 30px;
+              background: $light;
+              color: $btnTextColor;
+              border: 1px solid $lighterGray;
+              font-size: 16px;
+              text-decoration: none;
+              transition: all 0.5s;
+              text-align: center;
+            }
+            a::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              left: 20px;
+              display: block;
+              width: 12px;
+              height: 12px;
+              margin: auto;
+              border-right: 1px solid $btnBorder;
+              border-top: 1px solid $btnBorder;
+              transform: rotate(45deg);
+              transition: all 0.3s;
+            }
+            a:hover {
+              color: $lightOrange;
+              opacity: 0.8;
+            }
+            a:hover::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              display: block;
+              width: 12px;
+              height: 12px;
+              margin: auto;
+              border-right: 1px solid $lightOrange;
+              border-top: 1px solid $lightOrange;
+              transform: rotate(45deg);
+              transition: all 0.3s;
+            }
+          }
+        }
+        .right-field {
+          align-items: flex-end;
+          justify-content: flex-end;
+        }
+      }
+      .prod-list-area {
+        background: $footerBg url(./assets/images/bgtxt_wrapping.png) no-repeat
+          bottom 90px right 50px/46px auto;
+        padding: 60px 0 0;
+        .prod-list-section {
+          max-width: 1000px;
+          margin: 0 auto;
+          background: $light;
+          .prod-list-title {
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 1px solid $orangeText;
+            h2 {
+              font-size: 22.4px;
+              color: $orangeText;
+              span {
+                font-size: 16px;
+              }
+            }
+          }
+          .prod-list-sub-title {
+            padding: 35px 0;
+            text-align: center;
+            position: relative;
+            h2 {
+              font-size: 20px;
+              color: $orangeText;
+            }
+            h2::after {
+              content: "";
+              border-bottom: 2px solid $orangeText;
+              width: 30px;
+              height: 2px;
+              position: absolute;
+              top: 42%;
+              right: 0;
+              left: 48.5%;
+              bottom: 0;
+            }
+            // .orange-line{
+            //   width: 30px;
+            //   height: 2px;
+            //   border-bottom: 2px solid $orangeText;
+            // }
+            p {
+              font-size: 13px;
+              padding: 30px 0;
+              letter-spacing: 2px;
+            }
+          }
+          .prod-list-group {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 0 30px;
+            .form-input-group {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              justify-content: flex-start;
+              text-decoration: none;
+              max-width: 168px;
+              width: 100%;
+              padding: 0 0 30px 0;
+              position: relative;
+              .prod-label {
+                font-size: 12px;
+                color: #bfbfbf;
+                padding: 10px 0;
+              }
+              button {
+                text-decoration: none;
+                cursor: pointer;
+                border: none;
+                background: no-repeat;
+                text-align: left;
+                .prod-name {
+                  font-size: 13px;
+                  color: #333333;
+                  transition: 0.4s;
+                  font-weight: normal;
+                  font-family: "Noto Sans JP", "游ゴシック体", YuGothic,
+                    "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+
+                  .bold-text {
+                    color: $orangeText;
+                  }
+                }
+              }
+              button:hover {
+                .prod-name {
+                  color: $orangeText;
+                }
+              }
+              input[type="checkbox"] {
+                width: 19.5px;
+                height: 19.5px;
+                position: absolute;
+                right: 15px;
+                top: 5px;
+              }
+            }
+          }
+        }
+      }
+      .second-prod-list-area {
+        padding: 70px 0 !important;
+        background: $footerBg;
+        .second-prod-list-sub {
+          padding: 30px 0 !important;
+        }
+      }
+      .prod-bot-text {
+        .prod-bot-text-red-p {
+          font-size: 16px;
+          color: $red;
+        }
+        .prod-bot-text-bot-p {
+          font-size: 15px;
+        }
+      }
+      .wrapper-area {
+        background: $footerBg;
+        position: relative;
+        .wrapper-section {
+          max-width: 1000px;
+          margin: 0 auto;
+          position: relative;
+          border: 1px solid $orangeText;
+          background: $light;
+          padding: 0 5% 80px;
+          .wrapper-sub-area {
+            text-align: center;
+            .wrapper-sub-title {
+              display: inline-block;
+              color: #fff;
+              background: $orangeText;
+              vertical-align: middle;
+              font-size: 16px;
+            }
+            .wrapper-sub-title::before,
+            .wrapper-sub-title::after {
+              content: "";
+              display: inline-block;
+              width: 0;
+              height: 0;
+              border-top: 30px solid $orangeText;
+              border-left: 10px solid #fff;
+              border-right: 10px solid #fff;
+              vertical-align: middle;
+            }
+            .wrapper-sub-title::before {
+              border-right: 10px solid $orangeText;
+            }
+            .wrapper-sub-title::after {
+              border-left: 10px solid $orangeText;
+            }
+          }
+          .wrapper-title-p {
+            text-align: center;
+            font-size: 13px;
+            padding: 20px 0;
+          }
+          .radio-btn-area {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            padding: 0 20px;
+            .radio-btn-group {
+              display: flex;
+              align-items: flex-start;
+              justify-content: flex-start;
+              max-width: 404.09px;
+              width: 100%;
+              position: relative;
+              .radio-btn-left {
+                display: flex;
+                flex-direction: column;
+                img {
+                  width: 141px;
+                  height: 53px;
+                }
+                h2 {
+                  font-size: 20px;
+                  color: $orangeText;
+                }
+                span {
+                  font-size: 13px;
+                  padding: 0 0 30px 0;
+                }
+                .input-group {
+                  display: flex;
+                  align-items: center;
+                  padding: 0 0 5px 0;
+                  input[type="radio"] {
+                    content: "";
+                    background: $radioBtn;
+                    border-radius: 100%;
+                    border: 1px solid $radioBorder;
+                    display: inline-block;
+                    width: 21.59px;
+                    height: 21.59px;
+                    position: relative;
+                    margin-right: 13px;
+                    vertical-align: middle;
+                    cursor: pointer;
+                    text-align: center;
+                    transition:.4s;
+                  }
+                  label{
+                    font-size: 14px;
+                  }
+                }
+              }.radio-btn-output {
+                position: absolute;
+                bottom: -10px;
+                right: 0;
+                left: 0;
+                text-align: right;
+                img{
+                  width: 57.5%;
+                  height: auto;
+                }
+              }
+              .radio-btn-output2 {
+                position: absolute;
+                bottom: -37px;
+                right: 3px;
+                left: 0;
+                text-align: right;
+                img{
+                  width: 30.9880000%;
+                  height: auto;
+                }
+              }
+            }
+          }
+        }
+        .wrapper-submit {
+          text-align: center;
+          padding: 50px 50px 0 50px;
+          input[type="submit"] {
+            padding: 17px 40px 17px 75px;
+            background: #ccc url(./assets/images/icon_cart_w@2x.png) no-repeat
+              center left 30px / auto 50%;
+            border: none;
+            color: #fff;
+            font-size: 16px;
+            font-family: "Noto Sans JP", "游ゴシック体", YuGothic, "游ゴシック",
+              "Yu Gothic", "メイリオ", sans-serif;
+            font-weight: normal;
+            letter-spacing: 4px;
+            cursor: pointer;
+            transition: 0.4s;
+          }
+          input[type="submit"]:hover {
+            background: $btnBorder url(./assets/images/icon_cart_w@2x.png) no-repeat
+              center left 30px / auto 50%;
+          }
+        } .cart-btn {
+          position: relative;
+          max-width: 462px;
+          width: 100%;
+          margin: 0 auto;
+          padding: 60px 0 0;
+          a {
+            position: relative;
+            display: block;
+            margin: 0 1%;
+            padding: 15px 30px;
+            background: $light;
+            color: $btnTextColor;
+            border: 1px solid $btnBorder;
+            font-size: 15px;
+            text-decoration: none;
+            transition: all 0.5s;
+            text-align: center;
+          }
+          a::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 20px;
+            display: block;
+            width: 12px;
+            height: 12px;
+            margin: auto;
+            border-right: 1px solid $btnBorder;
+            border-top: 1px solid $btnBorder;
+            transform: rotate(45deg);
+            transition: all 0.3s;
+          }
+          a:hover {
+            color: $lightOrange;
+            opacity: 0.8;
+          }
+          a:hover::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 25px;
+            display: block;
+            width: 12px;
+            height: 12px;
+            margin: auto;
+            border-right: 1px solid $lightOrange;
+            border-top: 1px solid $lightOrange;
+            transform: rotate(45deg);
+            transition: all 0.3s;
+          }
+        }
+      }
+      .second-product-list-field{
+        background: url(./assets/images/lineup_bg.jpg) no-repeat top center/cover;
+        background-image: url(./assets/images/bgtxt_wrapping2.png), url(./assets/images/lineup_bg.jpg);
+        background-position: bottom 150px left 50px,top center;
+        background-size: 46px auto,cover;
+        .second-last-field{
+          padding: 70px 0 !important;
+          background: transparent;
+        }
+        .second-wrapper-sec {
+          background: transparent;
+          position: relative;
+          .wrapper-section {
+            max-width: 1000px;
+            margin: 0 auto;
+            position: relative;
+            border: 1px solid $orangeText;
+            background: $light;
+            padding: 0 5% 80px;
+            .wrapper-sub-area {
+              text-align: center;
+              .wrapper-sub-title {
+                display: inline-block;
+                color: #fff;
+                background: $orangeText;
+                vertical-align: middle;
+                font-size: 16px;
+              }
+              .wrapper-sub-title::before,
+              .wrapper-sub-title::after {
+                content: "";
+                display: inline-block;
+                width: 0;
+                height: 0;
+                border-top: 30px solid $orangeText;
+                border-left: 10px solid #fff;
+                border-right: 10px solid #fff;
+                vertical-align: middle;
+              }
+              .wrapper-sub-title::before {
+                border-right: 10px solid $orangeText;
+              }
+              .wrapper-sub-title::after {
+                border-left: 10px solid $orangeText;
+              }
+            }
+            .wrapper-title-p {
+              text-align: center;
+              font-size: 13px;
+              padding: 20px 0;
+            }
+            .radio-btn-area {
+              display: flex;
+              align-items: flex-start;
+              justify-content: space-between;
+              padding: 0 20px;
+              .radio-btn-group {
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                max-width: 404.09px;
+                width: 100%;
+                position: relative;
+                .radio-btn-left {
+                  display: flex;
+                  flex-direction: column;
+                  img {
+                    width: 141px;
+                    height: 53px;
+                  }
+                  h2 {
+                    font-size: 20px;
+                    color: $orangeText;
+                  }
+                  span {
+                    font-size: 13px;
+                    padding: 0 0 30px 0;
+                  }
+                  .input-group {
+                    display: flex;
+                    align-items: center;
+                    padding: 0 0 5px 0;
+                    input[type="radio"] {
+                      content: "";
+                      background: $radioBtn;
+                      border-radius: 100%;
+                      border: 1px solid $radioBorder;
+                      display: inline-block;
+                      width: 21.59px;
+                      height: 21.59px;
+                      position: relative;
+                      margin-right: 13px;
+                      vertical-align: middle;
+                      cursor: pointer;
+                      text-align: center;
+                      transition:.4s;
+                    }
+                    label{
+                      font-size: 14px;
+                    }
+                  }
+                }.radio-btn-output {
+                  position: absolute;
+                  bottom: -10px;
+                  right: 0;
+                  left: 0;
+                  text-align: right;
+                  img{
+                    width: 57.5%;
+                    height: auto;
+                  }
+                }
+                .radio-btn-output2 {
+                  position: absolute;
+                  bottom: -37px;
+                  right: 3px;
+                  left: 0;
+                  text-align: right;
+                  img{
+                    width: 30.9880000%;
+                    height: auto;
+                  }
+                }
+              }
+            }
+          }
+          .wrapper-submit {
+            text-align: center;
+            padding: 50px 50px 0 50px;
+            input[type="submit"] {
+              padding: 17px 40px 17px 75px;
+              background: #ccc url(./assets/images/icon_cart_w@2x.png) no-repeat
+                center left 30px / auto 50%;
+              border: none;
+              color: #fff;
+              font-size: 16px;
+              font-family: "Noto Sans JP", "游ゴシック体", YuGothic, "游ゴシック",
+                "Yu Gothic", "メイリオ", sans-serif;
+              font-weight: normal;
+              letter-spacing: 4px;
+              cursor: pointer;
+              transition: 0.4s;
+            }
+            input[type="submit"]:hover {
+              background: $btnBorder url(./assets/images/icon_cart_w@2x.png) no-repeat
+                center left 30px / auto 50%;
+            }
+          } .cart-btn {
+            position: relative;
+            max-width: 462px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 60px 0 0;
+            a {
+              position: relative;
+              display: block;
+              margin: 0 1%;
+              padding: 15px 30px;
+              background: $light;
+              color: $btnTextColor;
+              border: 1px solid $btnBorder;
+              font-size: 15px;
+              text-decoration: none;
+              transition: all 0.5s;
+              text-align: center;
+            }
+            a::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              left: 20px;
+              display: block;
+              width: 12px;
+              height: 12px;
+              margin: auto;
+              border-right: 1px solid $btnBorder;
+              border-top: 1px solid $btnBorder;
+              transform: rotate(45deg);
+              transition: all 0.3s;
+            }
+            a:hover {
+              color: $lightOrange;
+              opacity: 0.8;
+            }
+            a:hover::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              left: 25px;
+              display: block;
+              width: 12px;
+              height: 12px;
+              margin: auto;
+              border-right: 1px solid $lightOrange;
+              border-top: 1px solid $lightOrange;
+              transform: rotate(45deg);
+              transition: all 0.3s;
+            }
+          }
+        }
+      }
+    }
+  }
+}

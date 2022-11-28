@@ -1,0 +1,314 @@
+section {
+  .two900-area {
+    padding: 92px 0 15px 0;
+    .two900-section {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      .two900-top-title {
+        text-align: center;
+        width: 100%;
+        h2 {
+          color: $red2;
+          font-size: 30px;
+        }
+      }
+      .two900-bot-title {
+        width: 100%;
+        display: flex;
+        align-items: baseline;
+        padding: 60px 0 10px 0;
+        position: relative;
+        background: url(./assets/images/text_course.png) no-repeat bottom left
+          29%/115px auto;
+        h2 {
+          font-size: 33.6px;
+          color: $orangeText;
+        }
+        span {
+          font-size: 24px;
+          font-weight: bold;
+          letter-spacing: 2.4px;
+        }
+      }
+      .two900-bot-title::after {
+        content: "";
+        position: absolute;
+        top: 48%;
+        bottom: 0;
+        right: 0;
+        display: block;
+        width: 60%;
+        height: 2px;
+        margin: auto;
+        background: linear-gradient(90deg, $orangeText, $peach);
+      }
+      .two200-title-p {
+        padding: 30px 0 0;
+        p {
+          font-size: 13px;
+        }
+      }
+    }
+    .two900-form-area {
+      margin: 80px 0 0;
+      background: #fff9ea url(./assets/images/bgtxt_maskandcream.png) no-repeat
+        top 90px left 50px/46px auto;
+      .two900-form-section {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 80px 0 0 0;
+        .two900-form-title {
+          text-align: center;
+          padding: 0 0 20px 0;
+          border-bottom: 1px solid $orangeText;
+          h2 {
+            font-size: 24px;
+            color: $orangeText;
+          }
+        }
+        .form-title-bot-p {
+          text-align: center;
+          padding: 20px 0 0;
+          p {
+            font-size: 13px;
+          }
+        }
+        .two900-form-cont {
+          padding: 35px 5px 0 5px;
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+          flex-wrap: wrap;
+          .form-input-group {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            text-decoration: none;
+            max-width: 170px;
+            width: 100%;
+            padding: 0 0 30px 0;
+            position: relative;
+            .prod-label {
+              font-size: 12px;
+              color: #bfbfbf;
+              padding: 10px 0;
+            }
+            button {
+              text-decoration: none;
+              cursor: pointer;
+              border: none;
+              background: no-repeat;
+              text-align: left;
+              .prod-name {
+                font-size: 13px;
+                color: #333333;
+                transition: 0.4s;
+                font-weight: normal;
+                font-family: "Noto Sans JP", "游ゴシック体", YuGothic,
+                  "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+
+                .bold-text {
+                  color: $orangeText;
+                }
+              }
+            }
+            button:hover {
+              .prod-name {
+                color: $orangeText;
+              }
+            }
+            input[type="checkbox"] {
+              width: 19.5px;
+              height: 19.5px;
+              position: absolute;
+              right: 15px;
+              top: 5px;
+            }
+          }
+        }
+      }
+    }
+    .second-form-area {
+      margin: 80px 0 0;
+      background: #fff6f9 url(./assets/images/bgtxt_dailycare.png) no-repeat top
+        90px left 50px/46px auto;
+      background-position: top 90px right 50px;
+      .second-form-section {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 80px 0 30px 0;
+      }
+    }
+    .third-form-area {
+      margin: 80px 0 0;
+      background: url(./assets/images/lineup_bg.jpg) no-repeat top center/cover;
+      background-image: url(./assets/images/bgtxt_specialcosme.png),
+        url(./assets/images/lineup_bg.jpg);
+      background-size: 46px auto, cover;
+      background-position: top 90px left 50px, top center;
+      .two900-form-section {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 80px 0;
+      }
+    }
+  }
+  .cart-area {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 0;
+    .cart-head {
+      .cart-red-p {
+        font-size: 16px;
+        color: $red;
+      }
+      .cart-bot-p {
+        font-size: 15px;
+      }
+    }
+    .cart-submit {
+      text-align: center;
+      padding: 30px;
+      input[type="submit"] {
+        padding: 17px 40px 17px 75px;
+        background: #ccc url(./assets/images/icon_cart_w@2x.png) no-repeat
+          center left 30px / auto 50%;
+        border: none;
+        color: #fff;
+        font-size: 16px;
+        font-family: "Noto Sans JP", "游ゴシック体", YuGothic, "游ゴシック",
+          "Yu Gothic", "メイリオ", sans-serif;
+        font-weight: normal;
+        letter-spacing: 4px;
+        cursor: pointer;
+        transition: 0.4s;
+      }
+      input[type="submit"]:hover {
+        background: $btnBorder url(./assets/images/icon_cart_w@2x.png) no-repeat
+          center left 30px / auto 50%;
+      }
+      .cart-submit-p {
+        font-size: 13px;
+        padding: 10px;
+      }
+      .cart-btn {
+        position: relative;
+        max-width: 258.3px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 40px 0 0;
+        a {
+          position: relative;
+          display: block;
+          margin: 0 1%;
+          padding: 15px 30px;
+          background: $light;
+          color: $btnTextColor;
+          border: 1px solid $btnBorder;
+          font-size: 15px;
+          text-decoration: none;
+          transition: all 0.5s;
+          text-align: center;
+        }
+        a::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 20px;
+          display: block;
+          width: 12px;
+          height: 12px;
+          margin: auto;
+          border-right: 1px solid $btnBorder;
+          border-top: 1px solid $btnBorder;
+          transform: rotate(45deg);
+          transition: all 0.3s;
+        }
+        a:hover {
+          color: $lightOrange;
+          opacity: 0.8;
+        }
+        a:hover::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 25px;
+          display: block;
+          width: 12px;
+          height: 12px;
+          margin: auto;
+          border-right: 1px solid $lightOrange;
+          border-top: 1px solid $lightOrange;
+          transform: rotate(45deg);
+          transition: all 0.3s;
+        }
+      }
+      .cart-links-area {
+        display: flex;
+        padding: 40px 0 0;
+        .cart-link {
+          position: relative;
+          max-width: 370px;
+          width: 100%;
+          margin: 0 auto;
+          padding: 40px 0 0;
+          a {
+            position: relative;
+            display: block;
+            margin: 0 1%;
+            padding: 15px 30px;
+            background: $light;
+            color: $btnTextColor;
+            border-bottom: 1px solid $btnBorder;
+            font-size: 15px;
+            text-decoration: none;
+            transition: all 0.5s;
+            text-align: center;
+          }
+          a::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 20px;
+            display: block;
+            width: 12px;
+            height: 12px;
+            margin: auto;
+            border-right: 1px solid $btnBorder;
+            border-top: 1px solid $btnBorder;
+            transform: rotate(45deg);
+            transition: all 0.3s;
+          }
+          a:hover {
+            color: $orangeText;
+            border-bottom: 1px solid $orangeText;
+            opacity: 0.8;
+          }
+          a:hover::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 12px;
+            display: block;
+            width: 12px;
+            height: 12px;
+            margin: auto;
+            border-right: 1px solid $orangeText;
+            border-top: 1px solid $orangeText;
+            transform: rotate(45deg);
+            transition: all 0.3s;
+          }
+        }
+      }
+    }
+  }
+}

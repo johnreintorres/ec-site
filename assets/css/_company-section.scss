@@ -1,0 +1,54 @@
+section {
+  .comp-area {
+    padding: 144px 0 100px 0;
+    .comp-section {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      .comp-title {
+        h2 {
+          font-size: 24px;
+          color: $orangeText;
+          letter-spacing: 2.5px;
+        }
+      }
+      .comp-cont {
+        width: 100%;
+        padding: 50px 0;
+        .comp-cont-det {
+          padding: 5px 60px 20px;
+          margin: 0 0 15px 0;
+          background: linear-gradient(
+              to left,
+              $lighterGray 80%,
+              $lightOrange 10%
+            )
+            left bottom no-repeat;
+          background-size: 100% 1px;
+          display: flex;
+          align-items: baseline;
+          justify-content: flex-start;
+          span{
+            font-size: 16px;
+            width: 64px;
+            text-align: center;
+          }
+          p{
+            font-size: 13px;
+            padding: 0 0 0 125px;
+            a{
+              color: $grayText;
+              transition: .4s;
+            }a:hover{
+              color: $orangeText;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

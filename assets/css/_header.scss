@@ -1,0 +1,33 @@
+header{
+  .header-area{
+    position: relative;
+    padding: 65px 0 0 0;
+    .header-carousel{
+      .header-carousel-content{
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .slide-1{
+        background: url(./assets/images/fv_slide_bg01.jpg) center no-repeat;
+        background-size: cover;
+      }
+      .slide-2{
+        background: url(./assets/images/fv_slide_bg02.jpg) center no-repeat;
+        background-size: cover;
+      }
+    }
+    .header-logo {
+      position: absolute;
+      position: absolute;
+      bottom: -33px;
+      left: 95px;
+      max-width: 400px;
+      img{
+        width: 100%;
+        height: auto;
+      }
+  }
+  }
+}

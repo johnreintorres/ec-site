@@ -1,0 +1,85 @@
+section {
+  .guide-area {
+    padding: 144px 0 180px 0;
+    .guide-section {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      .guide-title {
+        h2 {
+          font-size: 24px;
+          color: $orangeText;
+          letter-spacing: 2.5px;
+        }
+      }
+      .guide-link {
+        padding: 40px 140px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        a {
+          font-size: 16px;
+          text-decoration: none;
+          color: $btnTextColor;
+          padding: 11px 0;
+          border: 1px solid $faqBorder;
+          border-radius: 40px;
+          width: 220px;
+          text-align: center;
+          transition: 0.4s;
+        }
+        a:hover {
+          background: $faqBorder;
+          color: $light;
+        }
+      }
+    }
+    .guide-ques {
+      padding: 20px 0;
+      width: 100%;
+      .guide-ques-title {
+        margin: 0;
+        h2 {
+          font-size: 28px;
+          color: $light;
+          font-weight: normal;
+          letter-spacing: 2.8px;
+          padding: 20px;
+          background: $orangeText;
+          line-height: 1;
+        }
+      }.none-bd {
+        margin: 0;
+        h2 {
+          font-size: 28px;
+          color: #000;
+          font-weight: normal;
+          letter-spacing: 2.8px;
+          padding: 0 0 0 17px;
+          background: none;
+          border-left: 3px solid #ffa777;
+          line-height: 1;
+        }
+      }
+      .guide-steps {
+    padding: 40px 0 0 0;
+    p{
+      font-size: 13px;
+      padding: 25px 0;
+    }.no-padd{
+      padding: 25px 0 0 0;
+    }
+}.guide-bot-steps{
+  padding: 15px 0 0 0;
+}
+    }.none-bd-area{
+      padding: 10px 0;
+    }.none-bd-area2{
+      padding: 0;
+    }
+  }
+}
